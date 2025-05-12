@@ -1,6 +1,3 @@
-# Paytm-clone
-
-
 # 💰 Paytm Clone (Tailwind CSS)
 
 A fully responsive **Paytm landing page clone** built using **HTML** and **Tailwind CSS**. This project replicates the visual design and layout of the official [Paytm](https://paytm.com/) homepage, helping me practice responsive design and modern utility-first CSS.
