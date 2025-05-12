@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Project : Paytm Clone</title>
+</head>
+
+<body class="bg-black">
+    <!---------------  navbar ----------------------->
+    <div id="navbar" class="h-16 w-full px-[10px] bg-white fixed top-0 right-0 left-0 shadow-lg">
+        <!--------------  padding seen div ------------------->
+        <div class="h-full w-full flex items-center justify-center">
+            <!----------------- navbar box ------------------>
+            <div id="nav-box" class="w-full xl:w-min flex items-center justify-between gap-[10px] xl:gap-[30px]">
+                <!--------------  nav box 1 ------------------->
+                <div id="nav-box1" class="flex items-center">
+                    <!------------------hamburguer ---------------------->
+                    <div class="h-[35px] w-[35px] sm:h-[40px] sm:w-[40px] flex xl:hidden items-center justify-center">
+                        <i class="fa-solid fa-bars text-[20px] sm:text-[25px]"></i>
+                    </div>
+
+                    <!------------------  logo div -------------------------->
+                    <div class="h-[35px] w-[170px] sm:h-[40px] sm:w-[200px] flex items-center justify-center ml-[5px]">
+                        <div id="logo-box" onclick="logoFunc()"
+                            class="h-[18px] w-[150px] sm:h-[23px] sm:w-[180px] flex items-center gap-[4px] cursor-pointer">
+                            <img src="paytm-img.png" alt="Paytm" class="h-full w-full" />
+                            <img src="love.png" alt="love" class="h-[18px] w-[20px]" />
+                            <img src="upi-img.png" alt="upi" class="h-full w-full" />
+                        </div>
+                    </div>
+
+                    <!----------------- nav link box ---------------->
+                    <div id="nav-link-box" class="hidden xl:flex xl:items-end h-[40px] cursor-default">
+                        <!----------------  link 1 ------------------->
+                        <div class="group">
+                            <div class="h-[40px] w-[150px] flex items-center justify-center relative">
+                                <div class="flex items-center font-semibold text-[14px] gap-[2px]">
+                                    <p>Ticket Booking</p>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
+
+                            <div
+                                class="hidden group-hover:flex flex-col absolute top-[50px] h-min w-[220px] py-[20px] bg-slate-200 rounded-lg shadow-xl/30 cursor-pointer">
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold hover:bg-other2 hover:text-other3 flex items-center">
+                                    <a href="#">Movie Tickets</a>
+                                </div>
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold flex items-center hover:bg-other2 hover:text-other3">
+                                    <a href="#">Flight Tickets</a>
+                                </div>
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold hover:bg-other2 hover:text-other3 flex items-center">
+                                    <a href="#">Train Tickets</a>
+                                </div>
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold flex items-center hover:bg-other2 hover:text-other3">
+                                    <a href="#">Bus Tickets</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!----------------  link 2 ------------------->
+                        <div class="group">
+                            <div class="h-[40px] w-[150px] flex items-center justify-center relative">
+                                <div class="flex items-center font-semibold text-[14px] gap-[2px]">
+                                    <p>Recharge & Bills</p>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
+
+                            <div
+                                class="hidden group-hover:flex flex-col absolute top-[50px] h-min w-[220px] py-[20px] bg-slate-200 rounded-lg shadow-xl/30 cursor-pointer">
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold hover:bg-other2 hover:text-other3 flex items-center">
+                                    <a href="#">Mobile Recharge</a>
+                                </div>
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold flex items-center hover:bg-other2 hover:text-other3">
+                                    <a href="#">Electricity Bill</a>
+                                </div>
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold hover:bg-other2 hover:text-other3 flex items-center">
+                                    <a href="#">DTH Recharge</a>
+                                </div>
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold flex items-center hover:bg-other2 hover:text-other3">
+                                    <a href="#">Municipal Bill</a>
+                                </div>
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold hover:bg-other2 hover:text-other3 flex items-center">
+                                    <a href="#">Water Bill</a>
+                                </div>
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold flex items-center hover:bg-other2 hover:text-other3">
+                                    <a href="#">Gas & Cylinder</a>
+                                </div>
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold hover:bg-other2 hover:text-other3 flex items-center">
+                                    <a href="#">Loan EMI</a>
+                                </div>
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold flex items-center hover:bg-other2 hover:text-other3">
+                                    <a href="#">Insurance Premium</a>
+                                </div>
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold flex items-center hover:bg-other2 hover:text-other3">
+                                    <a href="#">Challan</a>  
+                                </div>
+                            </div>
+                        </div>
+
+                        <!----------------  link 3 ------------------->
+                        <div class="group">
+                            <div class="h-[40px] w-[180px] flex items-center justify-center relative">
+                                <div class="flex items-center font-semibold text-[14px] gap-[2px]">
+                                    <p>Payments & Services</p>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
+
+                            <div
+                                class="hidden group-hover:flex flex-col absolute top-[50px] h-min w-[220px] py-[20px] bg-slate-200 rounded-lg shadow-xl/30 cursor-pointer">
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold hover:bg-other2 hover:text-other3 flex items-center">
+                                    <a href="#">Payments</a>
+                                </div>
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold flex items-center hover:bg-other2 hover:text-other3">
+                                    <a href="#">Loans & Cards</a>
+                                </div>
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold hover:bg-other2 hover:text-other3 flex items-center">
+                                    <a href="#">Wealth</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!----------------  link 4 ------------------->
+                        <div class="group">
+                            <div class="h-[40px] w-[170px] flex items-center justify-center relative">
+                                <div class="flex items-center font-semibold text-[14px] gap-[2px]">
+                                    <p>Paytm for Business</p>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
+
+                            <div
+                                class="hidden group-hover:flex flex-col absolute top-[50px] h-min w-[220px] py-[20px] bg-slate-200 rounded-lg shadow-xl/30 cursor-pointer">
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold hover:bg-other2 hover:text-other3 flex items-center">
+                                    <a href="#">Online Payments</a>
+                                </div>
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold flex items-center hover:bg-other2 hover:text-other3">
+                                    <a href="#">Offline Payments</a>
+                                </div>
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold hover:bg-other2 hover:text-other3 flex items-center">
+                                    <a href="#">Business Software</a>
+                                </div>
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold flex items-center hover:bg-other2 hover:text-other3">
+                                    <a href="#">Business Landing</a>
+                                </div>
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold hover:bg-other2 hover:text-other3 flex items-center">
+                                    <a href="#">Insurance</a>
+                                </div>
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold flex items-center hover:bg-other2 hover:text-other3">
+                                    <a href="#">For Developers - API</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!----------------  link 5 ------------------->
+                        <div class="group">
+                            <div class="h-[40px] w-[100px] flex items-center justify-center relative">
+                                <div class="flex items-center font-semibold text-[14px] gap-[2px]">
+                                    <p>Company</p>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
+
+                            <div
+                                class="hidden group-hover:flex flex-col absolute top-[50px] h-min w-[220px] py-[20px] bg-slate-200 rounded-lg shadow-xl/30 cursor-pointer">
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold hover:bg-other2 hover:text-other3 flex items-center">
+                                    <a href="#">About</a>
+                                </div>
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold flex items-center hover:bg-other2 hover:text-other3">
+                                    <a href="#">Investor Relations</a>
+                                </div>
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold hover:bg-other2 hover:text-other3 flex items-center">
+                                    <a href="#">Sustainability</a>
+                                </div>
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold flex items-center hover:bg-other2 hover:text-other3">
+                                    <a href="#">Blog</a>
+                                </div>
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold hover:bg-other2 hover:text-other3 flex items-center">
+                                    <a href="#">Latest News</a>
+                                </div>
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold flex items-center hover:bg-other2 hover:text-other3">
+                                    <a href="#">Contact Us</a>
+                                </div>
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold hover:bg-other2 hover:text-other3 flex items-center">
+                                    <a href="#">Customer Care</a>
+                                </div>
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold flex items-center hover:bg-other2 hover:text-other3">
+                                    <a href="#">Career</a>
+                                </div>
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold hover:bg-other2 hover:text-other3 flex items-center">
+                                    <a href="#">CSR</a>
+                                </div>
+                                <div
+                                    class="h-[40px] w-full px-[30px] font-bold flex items-center hover:bg-other2 hover:text-other3">
+                                    <a href="#">Terms & Conditions</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-----------------  nav box 2 ------------------------>
+                <div id="nav-box2" class="flex">
+                    <!----------------------  download button -------------------->
+                    <div class="h-[40px] w-[150px] hidden md:flex md:items-center md:justify-center">
+                        <div onclick="showDownload()" class="flex items-center font-bold text-[14px] gap-[5px] text-other1 cursor-pointer">
+                            <i class="fa-solid fa-download"></i>
+                            <p>Download App</p>
+                        </div>
+                    </div>
+
+                    <!-----------------------  sign up ------------------------------->
+                    <div class="h-[40px] w-min flex items-center justify-center">
+                        <div onclick="showSignUp()"
+                            class="rounded-full bg-other1 flex items-center justify-center h-[30px] w-[31px] sm:h-full sm:w-min sm:rounded-[20px] sm:px-[3px] sm:gap-[8px] cursor-pointer">
+                            <i class="fa-solid fa-circle-user text-[23px] sm:text-[33px] text-blue-100"></i>
+                            <p class="text-white hidden sm:block sm:w-[60px]">Sign In</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!----------------------------  download button logic  ----------------------->
+    <div class="show-download fixed w-[100%] h-[100vh] top-[0px] bg-black bg-opacity-40 hidden items-center justify-center">
+        <div class="h-[600px] w-[450px] bg-white rounded-xl shadow-xl/30">
+            <header class="h-[50px] w-full pr-[20px] pt-[20px] flex items-center justify-end">
+                <i onclick="disableDownload()" class="fa-solid fa-circle-xmark text-[25px] text-gray-300 cursor-pointer"></i>
+            </header>
+
+            <main class="mt-[30px] mb-[50px] flex flex-col items-center gap-[5px]">
+                <div class="h-[270px] w-[270px]">
+                    <img src="download-scanner.png" alt="download">
+                </div>
+
+                <div class="flex flex-col items-center gap-0">
+                    <p class="font-bold text-xl text-other1">Scan the QR code to</p>
+                    <p class="font-bold text-xl text-other1">download the Paytm app</p>
+                </div>
+            </main>
+
+            <div class="flex flex-col items-center gap-[8px]">
+                <p class="text-gray-700">or Select your App Store</p>
+
+                <div class="h-[50px] w-[290px] pl-[20px] pr-[20px] flex items-center gap-[20px] text-other1 border-2 border-other1 rounded-3xl">
+                    <p>Download Paytm App</p>
+
+                    <a href="https://apps.apple.com/in/app/paytm-secure-upi-payments/id473941634?is_retargeting=true&source_caller=ui&shortlink=adpaias&c=app-icon&pid=app-download-page&deep_link_value=paytmmp%3A%2F%2Fhomepage_primary&af_click_lookback=14d&af_xp=custom" target="_blank"><img src="apple.png" alt="apple" class="h-[22px] w-[20px]"></a>
+
+                    <a href="https://play.google.com/store/apps/details?id=net.one97.paytm&is_retargeting=true&source_caller=ui&shortlink=adpai&c=app-icon&pid=app-download-page&af_click_lookback=14d&af_xp=custom" target="_blank"><img src="playstore.png" alt="playstore" class="h-[20px] w-[20px]"></a>
+                </div>
+            </div>
+
+            <footer class="mt-[30px]">
+                <p class="h-[18px] w-full bg-other3"></p>
+                <p class="h-[18px] w-full bg-other1"></p>
+            </footer>
+        </div>
+    </div>
+
+    <!-----------------------   signup button card design min (640) sm  ----------------------------->
+    <div class="show-signup fixed w-[100%] h-[100vh] top-[0px] bg-black bg-opacity-40 hidden sm:hidden items-center justify-center">
+        <div class="h-[480px] w-[570px] bg-white rounded-xl shadow-xl/30 p-[20px]">
+            <header class="h-[50px] w-full flex justify-end gap-[100px]">
+                <p class="text-[19px] font-[600]">Login with your Paytm account</p>
+                <i onclick="disableSignUp()" class="fa-solid fa-circle-xmark text-[25px] cursor-pointer"></i>
+            </header>
+
+            <main class="h-[240px] w-full bg-other6 rounded-[15px] p-[20px] flex items-center gap-[20px]">
+                <ul class="h-full w-[60%] pt-[10px] flex flex-col pl-[20px] gap-[10px] list-decimal">
+                    <p class="mb-[8px] text-[15px] font-[500] ml-[-20px]">Steps to scan QR Code</p>
+                    <li class="text-[15px] text-other5">Open Paytm App</li>
+                    <li class="text-[15px] text-other5">Tap Scan option available at the <br>bottom</li>
+                    <li class="text-[15px] text-other5">Point Paytm Scan at QR Code to <br>login</li>
+                </ul>
+                <img src="signup-scanner.png" alt="signup" class="h-full shadow-2xl">
+            </main>
+
+            <div class="h-[70px] w-full flex items-center">
+                <p class="text-[13px]">By signing in, you agree to our <a href="#"><strong class="font-[600] text-other4">privacy policy</strong></a> and <a href="#"><strong class="font-[600] text-other4">terms of use</strong></a></p>
+            </div>
+
+            <footer class="h-[80px] w-full border-t-[2px] border-gray-200 flex items-center pt-[15px] gap-[20px]">
+                <p class="text-[13px]">To create an account download <br>Paytm App</p>
+                <div class="flex gap-[10px]">
+                    <a href="https://apps.apple.com/in/app/paytm-secure-upi-payments/id473941634?is_retargeting=true&source_caller=ui&shortlink=adpaias&c=app-icon&pid=app-download-page&deep_link_value=paytmmp%3A%2F%2Fhomepage_primary&af_click_lookback=14d&af_xp=custom" target="_blank"><img src="apple-store.png" alt="apple" class="h-[40px] w-[150px] rounded-[5px]"></a>
+                    <a href="https://play.google.com/store/apps/details?id=net.one97.paytm&is_retargeting=true&source_caller=ui&shortlink=adpai&c=app-icon&pid=app-download-page&af_click_lookback=14d&af_xp=custom" target="_blank"><img src="play-store.png" alt="play-store" class="h-[40px] w-[150px] rounded-[5px]"></a>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <!-------------------------------  hero section ----------------------------------------->
+    <div class="h-[660px] w-full bg-other2 mt-[64px]"></div>
+
+    <!--------------------------  script js --------------------------------->
+    <script>
+        /***************  function 1  with logo logic **********************/
+        function logoFunc() {
+            location.reload();
+        }
+
+        /****************  function 2  with download logic ************************/
+        function showDownload() {
+            let showDownload = document.querySelector(".show-download");
+            if(showDownload.classList.contains("hidden")) {
+                showDownload.style.display = "flex";
+            }
+        }
+
+        function disableDownload() {
+            let showDownload = document.querySelector(".show-download");
+            showDownload.style.display = "none";
+        }
+
+        /****************  function 3 with signup logic ************************/
+        function showSignUp() {
+            let showSignUp = document.querySelector(".show-signup");
+            if(showSignUp.classList.contains("hidden") && window.innerWidth >= 640) {
+                showSignUp.style.display = "flex";
+            }
+        }
+
+        function disableSignUp() {
+            let showSignUp = document.querySelector(".show-signup");
+            showSignUp.style.display = "none";
+        }
+    </script>
+</body>
+</html>
