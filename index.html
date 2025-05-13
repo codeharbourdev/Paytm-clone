@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +10,6 @@
     <link rel="stylesheet" href="main.css" />
     <title>Project : Paytm Clone</title>
 </head>
-
 <body class="bg-black relative">
     <!---------------  navbar ----------------------->
     <div id="navbar" class="h-16 w-full px-[10px] bg-white fixed top-0 right-0 left-0 z-10 shadow-lg">
@@ -22,17 +20,106 @@
                 <!--------------  nav box 1 ------------------->
                 <div id="nav-box1" class="flex items-center">
                     <!------------------hamburguer ---------------------->
-                    <div class="h-[35px] w-[35px] sm:h-[40px] sm:w-[40px] flex xl:hidden items-center justify-center">
-                        <i class="fa-solid fa-bars text-[20px] sm:text-[25px]"></i>
+                    <div
+                        class="h-[35px] w-[35px] sm:h-[40px] sm:w-[40px] flex xl:hidden items-center justify-center relative">
+                        <i id="show-bar" onclick="showSidebar()"
+                            class="fa-solid fa-bars text-[20px] sm:text-[25px]"></i>
+                    </div>
+
+                    <!------------------  hamburgur content design -------------------->
+                    <div id="side-bar"
+                        class="fixed top-16 bottom-0 left-0 bg-other6 w-full hidden items-start justify-center overflow-y-auto py-[5px]">
+                        <!---------------  scroll container -------------------->
+                        <div class="h-min w-full">
+                            <!------------------- side opt start ------------------->
+                            <div class="side-opt h-min w-full flex flex-col pl-[20px] pr-[15px]">
+                                <div class="ques-opt h-[50px] w-full flex items-center justify-between">
+                                    <p class="text-[15px] cursor-pointer">Ticket Booking</p>
+                                    <i class="fa-solid fa-chevron-down text-[13px]"></i>
+                                </div>
+                                <div class="ans-opt h-min w-full hidden flex-col gap-[20px] pl-[20px] py-[10px]">
+                                    <a href="#" class="text-[15px]">Movie Tickets</a>
+                                    <a href="#" class="text-[15px]">Flight Tickets</a>
+                                    <a href="#" class="text-[15px]">Train Tickets</a>
+                                    <a href="#" class="text-[15px]">Bus Tickets</a>
+                                </div>
+                            </div>
+
+                            <div class="side-opt h-min w-full flex flex-col pl-[20px] pr-[15px]">
+                                <div class="ques-opt h-[50px] w-full flex items-center justify-between">
+                                    <p class="text-[15px] cursor-pointer">Recharge & Bills</p>
+                                    <i class="fa-solid fa-chevron-down text-[13px]"></i>
+                                </div>
+                                <div class="ans-opt h-min w-full hidden flex-col gap-[20px] pl-[20px] py-[10px]">
+                                    <a href="#" class="text-[15px]">Mobile Recharge</a>
+                                    <a href="#" class="text-[15px]">Electricity Bills</a>
+                                    <a href="#" class="text-[15px]">DTH Recharge</a>
+                                    <a href="#" class="text-[15px]">Municipal Bill</a>
+                                    <a href="#" class="text-[15px]">Water Bill</a>
+                                    <a href="#" class="text-[15px]">Gas & Cylinder</a>
+                                    <a href="#" class="text-[15px]">Loan EMI</a>
+                                    <a href="#" class="text-[15px]">Insurance Premium</a>
+                                    <a href="#" class="text-[15px]">Challan</a>
+                                </div>
+                            </div>
+
+                            <div class="side-opt h-min w-full flex flex-col pl-[20px] pr-[15px]">
+                                <div class="ques-opt h-[50px] w-full flex items-center justify-between">
+                                    <p class="text-[15px] cursor-pointer">
+                                        Payments & Services
+                                    </p>
+                                    <i class="fa-solid fa-chevron-down text-[13px]"></i>
+                                </div>
+                                <div class="ans-opt h-min w-full hidden flex-col gap-[20px] pl-[20px] py-[10px]">
+                                    <a href="#" class="text-[15px]">Payments</a>
+                                    <a href="#" class="text-[15px]">Loans & Credit Cards</a>
+                                    <a href="#" class="text-[15px]">Wealth</a>
+                                </div>
+                            </div>
+
+                            <div class="side-opt h-min w-full flex flex-col pl-[20px] pr-[15px]">
+                                <div class="ques-opt h-[50px] w-full flex items-center justify-between">
+                                    <p class="text-[15px] cursor-pointer">Paytm for Business</p>
+                                    <i class="fa-solid fa-chevron-down text-[13px]"></i>
+                                </div>
+                                <div class="ans-opt h-min w-full hidden flex-col gap-[20px] pl-[20px] py-[10px]">
+                                    <a href="#" class="text-[15px]">Online Payments</a>
+                                    <a href="#" class="text-[15px]">Offline Payments</a>
+                                    <a href="#" class="text-[15px]">Business Software</a>
+                                    <a href="#" class="text-[15px]">Business Lending</a>
+                                    <a href="#" class="text-[15px]">Insurance</a>
+                                    <a href="#" class="text-[15px]">For Developer - API</a>
+                                </div>
+                            </div>
+
+                            <div class="side-opt h-min w-full flex flex-col pl-[20px] pr-[15px]">
+                                <div class="ques-opt h-[50px] w-full flex items-center justify-between">
+                                    <p class="text-[15px] cursor-pointer">Company</p>
+                                    <i class="fa-solid fa-chevron-down text-[13px]"></i>
+                                </div>
+                                <div class="ans-opt h-min w-full hidden flex-col gap-[20px] pl-[20px] py-[10px]">
+                                    <a href="#" class="text-[15px]">About</a>
+                                    <a href="#" class="text-[15px]">Investor Relations</a>
+                                    <a href="#" class="text-[15px]">Sustainability</a>
+                                    <a href="#" class="text-[15px]">Blog</a>
+                                    <a href="#" class="text-[15px]">Latest News</a>
+                                    <a href="#" class="text-[15px]">Contact Us</a>
+                                    <a href="#" class="text-[15px]">Customer Care</a>
+                                    <a href="#" class="text-[15px]">Career</a>
+                                    <a href="#" class="text-[15px]">CSR</a>
+                                    <a href="#" class="text-[15px]">Terms & Conditions</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <!------------------  logo div -------------------------->
                     <div class="h-[35px] w-[170px] sm:h-[40px] sm:w-[200px] flex items-center justify-center ml-[5px]">
                         <div id="logo-box" onclick="logoFunc()"
                             class="h-[18px] w-[150px] sm:h-[23px] sm:w-[180px] flex items-center gap-[4px] cursor-pointer">
-                            <img src="paytm-img.png" alt="Paytm" class="h-full w-full" />
-                            <img src="love.png" alt="love" class="h-[18px] w-[20px]" />
-                            <img src="upi-img.png" alt="upi" class="h-full w-full" />
+                            <img src="paytm-img.png" alt="Paytm" loading="lazy" class="h-full w-full" />
+                            <img src="love.png" alt="love" loading="lazy" class="h-[18px] w-[20px]" />
+                            <img src="upi-img.png" alt="upi" loading="lazy" class="h-full w-full" />
                         </div>
                     </div>
 
@@ -113,7 +200,7 @@
                                 </div>
                                 <div
                                     class="h-[40px] w-full px-[30px] font-bold flex items-center hover:bg-other2 hover:text-other3">
-                                    <a href="#">Challan</a>  
+                                    <a href="#">Challan</a>
                                 </div>
                             </div>
                         </div>
@@ -242,7 +329,8 @@
                 <div id="nav-box2" class="flex">
                     <!----------------------  download button -------------------->
                     <div class="h-[40px] w-[150px] hidden md:flex md:items-center md:justify-center">
-                        <div onclick="showDownload()" class="flex items-center font-bold text-[14px] gap-[5px] text-other1 cursor-pointer">
+                        <div onclick="showDownload()"
+                            class="flex items-center font-bold text-[14px] gap-[5px] text-other1 cursor-pointer">
                             <i class="fa-solid fa-download"></i>
                             <p>Download App</p>
                         </div>
@@ -261,17 +349,18 @@
         </div>
     </div>
 
-
     <!----------------------------  download button logic  ----------------------->
-    <div class="show-download fixed w-[100%] h-[100vh] top-[0px] z-10 bg-black bg-opacity-40 hidden items-center justify-center">
+    <div
+        class="show-download fixed w-[100%] h-[100vh] top-[0px] z-10 bg-black bg-opacity-40 hidden items-center justify-center">
         <div class="h-[600px] w-[450px] bg-white rounded-xl shadow-xl/30">
             <header class="h-[50px] w-full pr-[20px] pt-[20px] flex items-center justify-end">
-                <i onclick="disableDownload()" class="fa-solid fa-circle-xmark text-[25px] text-gray-300 cursor-pointer"></i>
+                <i onclick="disableDownload()"
+                    class="fa-solid fa-circle-xmark text-[25px] text-gray-300 cursor-pointer"></i>
             </header>
 
             <main class="mt-[30px] mb-[50px] flex flex-col items-center gap-[5px]">
                 <div class="h-[270px] w-[270px]">
-                    <img src="download-scanner.png" alt="download">
+                    <img src="download-scanner.png" alt="download" />
                 </div>
 
                 <div class="flex flex-col items-center gap-0">
@@ -283,12 +372,15 @@
             <div class="flex flex-col items-center gap-[8px]">
                 <p class="text-gray-700">or Select your App Store</p>
 
-                <div class="h-[50px] w-[290px] pl-[20px] pr-[20px] flex items-center gap-[20px] text-other1 border-2 border-other1 rounded-3xl">
+                <div
+                    class="h-[50px] w-[290px] pl-[20px] pr-[20px] flex items-center gap-[20px] text-other1 border-2 border-other1 rounded-3xl">
                     <p>Download Paytm App</p>
 
-                    <a href="https://apps.apple.com/in/app/paytm-secure-upi-payments/id473941634?is_retargeting=true&source_caller=ui&shortlink=adpaias&c=app-icon&pid=app-download-page&deep_link_value=paytmmp%3A%2F%2Fhomepage_primary&af_click_lookback=14d&af_xp=custom" target="_blank"><img src="apple.png" alt="apple" class="h-[22px] w-[20px]"></a>
+                    <a href="https://apps.apple.com/in/app/paytm-secure-upi-payments/id473941634?is_retargeting=true&source_caller=ui&shortlink=adpaias&c=app-icon&pid=app-download-page&deep_link_value=paytmmp%3A%2F%2Fhomepage_primary&af_click_lookback=14d&af_xp=custom"
+                        target="_blank"><img src="apple.png" alt="apple" class="h-[22px] w-[20px]" /></a>
 
-                    <a href="https://play.google.com/store/apps/details?id=net.one97.paytm&is_retargeting=true&source_caller=ui&shortlink=adpai&c=app-icon&pid=app-download-page&af_click_lookback=14d&af_xp=custom" target="_blank"><img src="playstore.png" alt="playstore" class="h-[20px] w-[20px]"></a>
+                    <a href="https://play.google.com/store/apps/details?id=net.one97.paytm&is_retargeting=true&source_caller=ui&shortlink=adpai&c=app-icon&pid=app-download-page&af_click_lookback=14d&af_xp=custom"
+                        target="_blank"><img src="playstore.png" alt="playstore" class="h-[20px] w-[20px]" /></a>
                 </div>
             </div>
 
@@ -300,11 +392,65 @@
     </div>
 
     <!-----------------------   signup button card design max (640) sm  ---------------------------->
-    <div class="show-signup-mobile fixed w-[100%] h-[100vh] top-[0px] z-10 bg-white hidden">
+    <div class="show-signup-mobile fixed w-[100%] h-[100vh] top-[0px] z-10 bg-white px-[20px] hidden flex-col">
+        <header class="h-[90px] w-full flex items-center">
+            <i onclick="disableSignUp()" class="fa-solid fa-circle-xmark text-[25px] cursor-pointer"></i>
+        </header>
+
+        <main class="h-[100%] w-full flex flex-col">
+            <div class="h-[70px] w-full flex items-center">
+                <p class="text-[19px] font-[600]">Login with your Paytm account</p>
+            </div>
+            <form class="flex flex-col gap-[20px]">
+                <div class="h-[60px] w-full border border-gray-200 rounded-sm flex items-center px-[10px]">
+                    <input class="w-full placeholder:font-bold placeholder:text-gray-700 text-[14px] font-bold"
+                        type="text" placeholder="Enter Email or Mobile" autocomplete="off" required />
+                </div>
+                <div class="h-[60px] w-full border border-gray-200 rounded-sm flex items-center px-[10px]">
+                    <input class="w-full placeholder:font-bold placeholder:text-gray-700 text-[14px] font-bold"
+                        type="password" name="password" placeholder="Enter Password" autocomplete="off" required />
+                    <i class="fa-solid fa-eye ml-[10px]"></i>
+                </div>
+                <div class="h-[50px] w-full flex">
+                    <button class="h-full w-[70%] bg-other4 font-bold text-white text-[15px] rounded">
+                        Sign In Securely
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                    <button
+                        class="h-full w-[30%] flex flex-col items-start justify-center pl-[20px] font-bold text-[14px] text-other4">
+                        <p>Forgot</p>
+                        <p>Password</p>
+                    </button>
+                </div>
+            </form>
+            <div class="h-[70px] w-full flex items-center">
+                <p class="text-[13px]">
+                    By signing in, you agree to our
+                    <a href="#"><strong class="font-[600] text-other4">privacy policy</strong></a>
+                    and
+                    <a href="#"><strong class="font-[600] text-other4">terms of use</strong></a>
+                </p>
+            </div>
+        </main>
+
+        <footer class="h-[140px] w-full border-t-[2px] border-gray-200 flex flex-col items-center justify-evenly">
+            <p class="text-[15px] w-[100%] text-center">
+                To create an account download Paytm App
+            </p>
+            <div class="flex gap-[10px]">
+                <a href="https://apps.apple.com/in/app/paytm-secure-upi-payments/id473941634?is_retargeting=true&source_caller=ui&shortlink=adpaias&c=app-icon&pid=app-download-page&deep_link_value=paytmmp%3A%2F%2Fhomepage_primary&af_click_lookback=14d&af_xp=custom"
+                    target="_blank"><img src="apple-store.png" alt="apple"
+                        class="h-[30px] w-[120px] rounded-[5px]" /></a>
+                <a href="https://play.google.com/store/apps/details?id=net.one97.paytm&is_retargeting=true&source_caller=ui&shortlink=adpai&c=app-icon&pid=app-download-page&af_click_lookback=14d&af_xp=custom"
+                    target="_blank"><img src="play-store.png" alt="play-store"
+                        class="h-[30px] w-[120px] rounded-[5px]" /></a>
+            </div>
+        </footer>
     </div>
 
     <!-----------------------   signup button card design min (640) sm  ----------------------------->
-    <div class="show-signup-desktop fixed w-[100%] h-[100vh] top-[0px] z-10 bg-black bg-opacity-40 hidden items-center justify-center">
+    <div
+        class="show-signup-desktop fixed w-[100%] h-[100vh] top-[0px] z-10 bg-black bg-opacity-40 hidden items-center justify-center">
         <div class="h-[480px] w-[570px] bg-white rounded-xl shadow-xl/30 p-[20px]">
             <header class="h-[50px] w-full flex justify-end gap-[100px]">
                 <p class="text-[19px] font-[600]">Login with your Paytm account</p>
@@ -313,58 +459,97 @@
 
             <main class="h-[240px] w-full bg-other6 rounded-[15px] p-[20px] flex items-center gap-[20px]">
                 <ul class="h-full w-[60%] pt-[10px] flex flex-col pl-[20px] gap-[10px] list-decimal">
-                    <p class="mb-[8px] text-[15px] font-[500] ml-[-20px]">Steps to scan QR Code</p>
+                    <p class="mb-[8px] text-[15px] font-[500] ml-[-20px]">
+                        Steps to scan QR Code
+                    </p>
                     <li class="text-[15px] text-other5">Open Paytm App</li>
-                    <li class="text-[15px] text-other5">Tap Scan option available at the <br>bottom</li>
-                    <li class="text-[15px] text-other5">Point Paytm Scan at QR Code to <br>login</li>
+                    <li class="text-[15px] text-other5">
+                        Tap Scan option available at the <br />bottom
+                    </li>
+                    <li class="text-[15px] text-other5">
+                        Point Paytm Scan at QR Code to <br />login
+                    </li>
                 </ul>
-                <img src="signup-scanner.png" alt="signup" class="h-full shadow-2xl">
+                <img src="signup-scanner.png" alt="signup" class="h-full shadow-2xl" />
             </main>
 
             <div class="h-[70px] w-full flex items-center">
-                <p class="text-[13px]">By signing in, you agree to our <a href="#"><strong class="font-[600] text-other4">privacy policy</strong></a> and <a href="#"><strong class="font-[600] text-other4">terms of use</strong></a></p>
+                <p class="text-[13px]">
+                    By signing in, you agree to our
+                    <a href="#"><strong class="font-[600] text-other4">privacy policy</strong></a>
+                    and
+                    <a href="#"><strong class="font-[600] text-other4">terms of use</strong></a>
+                </p>
             </div>
 
             <footer class="h-[80px] w-full border-t-[2px] border-gray-200 flex items-center pt-[15px] gap-[20px]">
-                <p class="text-[13px]">To create an account download <br>Paytm App</p>
+                <p class="text-[13px]">
+                    To create an account download <br />Paytm App
+                </p>
                 <div class="flex gap-[10px]">
-                    <a href="https://apps.apple.com/in/app/paytm-secure-upi-payments/id473941634?is_retargeting=true&source_caller=ui&shortlink=adpaias&c=app-icon&pid=app-download-page&deep_link_value=paytmmp%3A%2F%2Fhomepage_primary&af_click_lookback=14d&af_xp=custom" target="_blank"><img src="apple-store.png" alt="apple" class="h-[40px] w-[150px] rounded-[5px]"></a>
-                    <a href="https://play.google.com/store/apps/details?id=net.one97.paytm&is_retargeting=true&source_caller=ui&shortlink=adpai&c=app-icon&pid=app-download-page&af_click_lookback=14d&af_xp=custom" target="_blank"><img src="play-store.png" alt="play-store" class="h-[40px] w-[150px] rounded-[5px]"></a>
+                    <a href="https://apps.apple.com/in/app/paytm-secure-upi-payments/id473941634?is_retargeting=true&source_caller=ui&shortlink=adpaias&c=app-icon&pid=app-download-page&deep_link_value=paytmmp%3A%2F%2Fhomepage_primary&af_click_lookback=14d&af_xp=custom"
+                        target="_blank"><img src="apple-store.png" alt="apple"
+                            class="h-[40px] w-[150px] rounded-[5px]" /></a>
+                    <a href="https://play.google.com/store/apps/details?id=net.one97.paytm&is_retargeting=true&source_caller=ui&shortlink=adpai&c=app-icon&pid=app-download-page&af_click_lookback=14d&af_xp=custom"
+                        target="_blank"><img src="play-store.png" alt="play-store"
+                            class="h-[40px] w-[150px] rounded-[5px]" /></a>
                 </div>
             </footer>
-
         </div>
     </div>
 
     <!-------------------------------  hero section ----------------------------------------->
-    <div class="h-[300px] w-full bg-other2 absolute top-[64px]"></div>
+    <div id="hero" class="h-[450px] w-full bg-orange-200 absolute top-[64px] px-[10px]">
+        <!---------------   padding scene box ---------------------->
+        <div class="h-full w-full  bg-other2 flex items-center justify-center">
+            <!----------------- hero box ------------------>
+            <div id="hero-box" class="w-full">
+    </div>
 
     <!--------------------------  script js --------------------------------->
     <script>
-        /***************  function 1  with logo logic **********************/
+        /*************** function 1 with hamburgur logic *****************/
+        let showbar = document.getElementById("show-bar");
+        let sidebar = document.getElementById("side-bar");
+
+        function showSidebar() {
+            if (sidebar.classList.contains("hidden")) {
+                sidebar.classList.remove("hidden");
+                sidebar.classList.add("flex");
+                showbar.classList.remove("fa-bars");
+                showbar.classList.add("fa-xmark");
+            } else {
+                sidebar.classList.remove("flex");
+                sidebar.classList.add("hidden");
+                showbar.classList.remove("fa-xmark");
+                showbar.classList.add("fa-bars");
+            }
+        }
+
+        /***************  function 2  with logo logic **********************/
         function logoFunc() {
             location.reload();
         }
 
-        /****************  function 2  with download logic ************************/
+        /****************  function 3  with download logic ************************/
         function showDownload() {
             let showDownload = document.querySelector(".show-download");
-            if(showDownload.classList.contains("hidden")) {
-                showDownload.style.display = "flex";
-            }
+            showDownload.classList.remove("hidden");
+            showDownload.classList.add("flex");
         }
 
         function disableDownload() {
             let showDownload = document.querySelector(".show-download");
-            showDownload.style.display = "none";
+            showDownload.classList.remove("flex");
+            showDownload.classList.add("hidden");
         }
 
-        /****************  function 3 with signup logic ************************/
+        /****************  function 4 with signup logic ************************/
         function showSignUp() {
-            let mobile = document.querySelector(".show-signup-mobile")
-            let desktop = document.querySelector(".show-signup-desktop")
+            let mobile = document.querySelector(".show-signup-mobile");
+            let desktop = document.querySelector(".show-signup-desktop");
 
-            if(window.innerWidth >= 640) {
+            if (window.innerWidth >= 640) {
                 desktop.classList.remove("hidden");
                 desktop.classList.add("flex");
             } else if (window.innerWidth < 640) {
@@ -374,8 +559,8 @@
         }
 
         function disableSignUp() {
-            let mobile = document.querySelector(".show-signup-mobile")
-            let desktop = document.querySelector(".show-signup-desktop")
+            let mobile = document.querySelector(".show-signup-mobile");
+            let desktop = document.querySelector(".show-signup-desktop");
 
             /****************  mobile *******************/
             mobile.classList.remove("flex");
@@ -385,6 +570,34 @@
             desktop.classList.remove("flex");
             desktop.classList.add("hidden");
         }
+
+        /*******************  function 5 sidebar logic ******************/
+        let sideopts = document.querySelectorAll(".side-opt");
+
+        sideopts.forEach((sideopt) => {
+            let ques = sideopt.querySelector(".ques-opt");
+            let ans = sideopt.querySelector(".ans-opt");
+            let icon = sideopt.querySelector("i");
+            let para = sideopt.querySelector("p");
+
+            ques.addEventListener("click", function () {
+                if (ans.classList.contains("hidden")) {
+                    ans.classList.remove("hidden");
+                    ans.classList.add("flex");
+                    icon.classList.remove("fa-chevron-down");
+                    icon.classList.add("fa-chevron-up");
+                    para.classList.add("font-bold");
+                    sideopt.classList.add("bg-other2");
+                } else {
+                    ans.classList.remove("flex");
+                    ans.classList.add("hidden");
+                    icon.classList.remove("fa-chevron-up");
+                    icon.classList.add("fa-chevron-down");
+                    para.classList.remove("font-bold");
+                    sideopt.classList.remove("bg-other2");
+                }
+            });
+        });
     </script>
 </body>
 </html>
