@@ -499,11 +499,480 @@
     </div>
 
     <!-------------------------------  hero section ----------------------------------------->
-    <div id="hero" class="h-[450px] w-full bg-orange-200 absolute top-[64px] px-[10px]">
-        <!---------------   padding scene box ---------------------->
-        <div class="h-full w-full  bg-other2 flex items-center justify-center">
-            <!----------------- hero box ------------------>
-            <div id="hero-box" class="w-full">
+    <div id="hero" class="h-[650px] bg-other2 sm:h-[600px] lg:h-[500px] xl:h-[450px] w-full absolute top-[64px] flex items-center justify-center">
+        <!----------------------- hero box min xl (1280px) ---------------------------->
+        <div class="h-full w-[1280px] hidden xl:flex xl:flex-col xl:items-center gap-[8px] py-[15px]">
+            <!-----------------------   header  --------------------------->
+            <header class="h-[100px] w-min gap-[35px] flex items-center">
+                <a href="#"
+                    class="h-full w-[85px] flex items-center justify-center gap-[3px] border-b-2 border-b-other4">
+                    <img src="flight.png" alt="flight" class="h-[15px] w-[25px]">
+                    <p class="font-medium text-[14px]">Flights</p>
+                </a>
+                <a href="#"
+                    class="h-full w-[60px] flex items-center justify-center gap-[3px] hover:border-b-2 border-b-other4">
+                    <img src="bus.png" alt="bus" class="h-[22px] w-[20px]">
+                    <p class="font-medium text-[14px]">Bus</p>
+                </a>
+                <a href="#"
+                    class="h-full w-[75px] flex items-center justify-center gap-[3px] hover:border-b-2 border-b-other4">
+                    <img src="train.png" alt="train" class="h-[23px] w-[20px]">
+                    <p class="font-medium text-[14px]">Trains</p>
+                </a>
+                <a href="#"
+                    class="h-full w-[110px] flex items-center justify-center gap-[3px] hover:border-b-2 border-b-other4">
+                    <img src="flight.png" alt="flight" class="h-[15px] w-[25px]">
+                    <p class="font-medium text-[14px]">Intl. Flights</p>
+                </a>
+            </header>
+            <!-------------------------   main   ---------------------------------------->
+            <main class="h-min w-min bg-white rounded-xl flex flex-col gap-[10px] p-[10px] border border-gray-400">
+                <!----------------------  header  ------------------------------->
+                <header class="h-[30px] w-[130px] flex items-center gap-[5px]">
+                    <input type="checkbox" name="checkbox" id="checkbox" checked class="cursor-pointer">
+                    <label for="checkbox" class="text-[14px] font-medium cursor-pointer">One Way</label>
+                </header>
+                <!-------------------------   main   ---------------------------->
+                <main class="h-[65px] w-min flex border-b border-b-gray-400 cursor-pointer">
+                    <div class=" h-[50px] w-[430px] flex items-center gap-[100px] border-r border-gray-400">
+                        <div>
+                            <p class="text-other7 text-[14px]">From</p>
+                            <h1 class="font-bold">Delhi (DEL)</h1>
+                        </div>
+                        <div class="flex gap-[10px]">
+                            <div class="flex items-end">
+                                <img src="exchange.png" alt="exchange" class="h-[25px] w-[25px]">
+                            </div>
+                            <div>
+                                <p class="text-other7 text-[14px]">To</p>
+                                <h1 class="font-bold">Mumbai (BOM)</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" h-[50px] w-[180px] flex flex-col pl-[20px] border-r border-gray-400">
+                        <p class="text-other7 text-[14px]">Depart</p>
+                        <h1 class="font-bold">Tue, 20 May 25</h1>
+                    </div>
+                    <div class=" h-[50px] w-[170px] flex flex-col pl-[20px] border-r border-gray-400">
+                        <p class="text-other7 text-[14px]">Return</p>
+                        <h1 class="font-bold text-other4">Add Return</h1>
+                    </div>
+                    <div class=" h-[50px] w-[220px] pl-[20px] flex flex-col">
+                        <p class="text-other7 text-[14px]">Passenger & Class</p>
+                        <h1 class="font-bold">1 Traveller, Economy</h1>
+                    </div>
+                    <button
+                        class=" h-[55px] w-[150px] flex items-center justify-center bg-other4 text-white font-bold rounded-[8px]">Search
+                        Flights
+                    </button>
+                </main>
+                <!---------------------------  footer ------------------------------->
+                <footer class="h-[50px] w-full flex gap-[10px]">
+                    <div class="flex flex-col gap-[5px]">
+                        <h1 class="text-other7 text-[15px] font-medium">Special Fares (optional)</h1>
+                        <div class="flex gap-[5px]">
+                            <img src="rupees.png" alt="rupees" class="h-[18px] w-[18px] rounded-full">
+                            <p class="text-other8 text-[12px] font-bold">Extra Savings</p>
+                        </div>
+                    </div>
+                    <div
+                        class="h-full w-[120px] flex flex-col justify-center pl-[15px] border border-gray-300 rounded-[8px] hover:bg-other3 cursor-pointer">
+                        <h1 class="text-[13px] font-bold">Armed Forces</h1>
+                        <p class="text-other1 font-medium text-[12px]">Up to ₹600 off</p>
+                    </div>
+                    <div
+                        class="h-full w-[120px] flex flex-col justify-center pl-[15px] border border-gray-300 rounded-[8px] hover:bg-other3 cursor-pointer">
+                        <h1 class="text-[13px] font-bold">Student</h1>
+                        <p class="text-other1 font-medium text-[12px]">Extra Baggage</p>
+                    </div>
+                    <div
+                        class="h-full w-[120px] flex flex-col justify-center pl-[15px] border border-gray-300 rounded-[8px] hover:bg-other3 cursor-pointer">
+                        <h1 class="text-[13px] font-bold">Senior Citizen</h1>
+                        <p class="text-other1 font-medium text-[12px]">Up to ₹600 off</p>
+                    </div>
+                </footer>
+            </main>
+            <!--------------------------   footer  ---------------------------------------->
+            <footer class="h-full w-full flex items-center justify-center gap-[20px]">
+                <img src="ads1.png" alt="ads1" class="h-[120px] w-[380px] rounded-[12px] cursor-pointer">
+                <img src="ads2.png" alt="ads2" class="h-[120px] w-[380px] rounded-[12px] cursor-pointer">
+            </footer>
+        </div>
+
+        <!----------------------- hero box min lg (1080px) ---------------------------->
+        <div class="h-full w-[1000px] hidden xl:hidden lg:flex lg:flex-col lg:items-center gap-[8px] py-[15px]">
+            <!-----------------------   header  --------------------------->
+            <header class="h-[100px] w-min gap-[35px] flex items-center">
+                <a href="#"
+                    class="h-full w-[85px] flex items-center justify-center gap-[3px] border-b-2 border-b-other4">
+                    <img src="flight.png" alt="flight" class="h-[15px] w-[25px]">
+                    <p class="font-medium text-[14px]">Flights</p>
+                </a>
+                <a href="#"
+                    class="h-full w-[60px] flex items-center justify-center gap-[3px] hover:border-b-2 border-b-other4">
+                    <img src="bus.png" alt="bus" class="h-[22px] w-[20px]">
+                    <p class="font-medium text-[14px]">Bus</p>
+                </a>
+                <a href="#"
+                    class="h-full w-[75px] flex items-center justify-center gap-[3px] hover:border-b-2 border-b-other4">
+                    <img src="train.png" alt="train" class="h-[23px] w-[20px]">
+                    <p class="font-medium text-[14px]">Trains</p>
+                </a>
+                <a href="#"
+                    class="h-full w-[110px] flex items-center justify-center gap-[3px] hover:border-b-2 border-b-other4">
+                    <img src="flight.png" alt="flight" class="h-[15px] w-[25px]">
+                    <p class="font-medium text-[14px]">Intl. Flights</p>
+                </a>
+            </header>
+            <!-------------------------   main   ---------------------------------------->
+            <main class="h-min w-min bg-white rounded-xl flex flex-col gap-[10px] p-[10px] border border-gray-400">
+                <!----------------------  header  ------------------------------->
+                <header class="h-[30px] w-[130px] flex items-center gap-[5px]">
+                    <input type="checkbox" name="checkbox" id="checkbox" checked class="cursor-pointer">
+                    <label for="checkbox" class="text-[14px] font-medium cursor-pointer">One Way</label>
+                </header>
+                <!-------------------------   main   ---------------------------->
+                <main class="h-[65px] w-min flex border-b border-b-gray-400 cursor-pointer">
+                    <div class=" h-[50px] w-[430px] flex items-center gap-[100px] border-r border-gray-400">
+                        <div>
+                            <p class="text-other7 text-[14px]">From</p>
+                            <h1 class="font-bold">Delhi (DEL)</h1>
+                        </div>
+                        <div class="flex gap-[10px]">
+                            <div class="flex items-end">
+                                <img src="exchange.png" alt="exchange" class="h-[25px] w-[25px]">
+                            </div>
+                            <div>
+                                <p class="text-other7 text-[14px]">To</p>
+                                <h1 class="font-bold">Mumbai (BOM)</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" h-[50px] w-[180px] flex flex-col pl-[20px] border-r border-gray-400">
+                        <p class="text-other7 text-[14px]">Depart</p>
+                        <h1 class="font-bold">Tue, 20 May 25</h1>
+                    </div>
+                    <div class=" h-[50px] w-[170px] flex flex-col pl-[20px]">
+                        <p class="text-other7 text-[14px]">Return</p>
+                        <h1 class="font-bold text-other4">Add Return</h1>
+                    </div>
+                </main>
+                <!---------------------------  footer 1 ------------------------------->
+                <div class="h-[50px] w-full flex justify-between cursor-pointer">
+                    <div class=" h-[50px] w-[220px] flex flex-col">
+                        <p class="text-other7 text-[14px]">Passenger & Class</p>
+                        <h1 class="font-bold">1 Traveller, Economy</h1>
+                    </div>
+                    <button
+                        class=" h-[50px] w-[150px] flex items-center justify-center bg-other4 text-white font-bold rounded-[8px]">Search
+                        Flights
+                    </button>
+                </div>
+                <!---------------------------  footer 2  -------------------------------->
+                <div class="h-[50px] w-full flex">
+                    <div class="flex flex-col gap-[5px]">
+                        <h1 class="text-other7 text-[15px] font-medium">Special Fares (optional)</h1>
+                        <div class="flex gap-[5px]">
+                            <img src="rupees.png" alt="rupees" class="h-[18px] w-[18px] rounded-full">
+                            <p class="text-other8 text-[12px] font-bold">Extra Savings</p>
+                        </div>
+                    </div>
+                    <div
+                        class="h-full w-[120px] flex flex-col justify-center pl-[15px] border border-gray-300 rounded-[8px] hover:bg-other3 cursor-pointer">
+                        <h1 class="text-[13px] font-bold">Armed Forces</h1>
+                        <p class="text-other1 font-medium text-[12px]">Up to ₹600 off</p>
+                    </div>
+                    <div
+                        class="h-full w-[120px] flex flex-col justify-center pl-[15px] border border-gray-300 rounded-[8px] hover:bg-other3 cursor-pointer">
+                        <h1 class="text-[13px] font-bold">Student</h1>
+                        <p class="text-other1 font-medium text-[12px]">Extra Baggage</p>
+                    </div>
+                    <div
+                        class="h-full w-[120px] flex flex-col justify-center pl-[15px] border border-gray-300 rounded-[8px] hover:bg-other3 cursor-pointer">
+                        <h1 class="text-[13px] font-bold">Senior Citizen</h1>
+                        <p class="text-other1 font-medium text-[12px]">Up to ₹600 off</p>
+                    </div>
+                </div>
+            </main>
+            <!--------------------------   footer  ---------------------------------------->
+            <footer class="h-full w-full flex items-center justify-center gap-[20px]">
+                <img src="ads1.png" alt="ads1" class="h-[120px] w-[380px] rounded-[12px] cursor-pointer">
+                <img src="ads2.png" alt="ads2" class="h-[120px] w-[380px] rounded-[12px] cursor-pointer">
+            </footer>
+        </div>
+
+        <!----------------------- hero box min sm (640px) ---------------------------->
+        <div
+            class="h-full w-[640px] hidden lg:hidden xl:hidden sm:flex sm:flex-col sm:items-center gap-[8px] py-[15px]">
+            <!-----------------------   header  --------------------------->
+            <header class="h-[150px] w-min gap-[35px] flex items-center">
+                <a href="#"
+                    class="h-full w-[85px] flex items-center justify-center gap-[3px] border-b-2 border-b-other4">
+                    <img src="flight.png" alt="flight" class="h-[15px] w-[25px]">
+                    <p class="font-medium text-[14px]">Flights</p>
+                </a>
+                <a href="#"
+                    class="h-full w-[60px] flex items-center justify-center gap-[3px] hover:border-b-2 border-b-other4">
+                    <img src="bus.png" alt="bus" class="h-[22px] w-[20px]">
+                    <p class="font-medium text-[14px]">Bus</p>
+                </a>
+                <a href="#"
+                    class="h-full w-[75px] flex items-center justify-center gap-[3px] hover:border-b-2 border-b-other4">
+                    <img src="train.png" alt="train" class="h-[23px] w-[20px]">
+                    <p class="font-medium text-[14px]">Trains</p>
+                </a>
+                <a href="#"
+                    class="h-full w-[110px] flex items-center justify-center gap-[3px] hover:border-b-2 border-b-other4">
+                    <img src="flight.png" alt="flight" class="h-[15px] w-[25px]">
+                    <p class="font-medium text-[14px]">Intl. Flights</p>
+                </a>
+            </header>
+            <!-------------------------   main   ---------------------------------------->
+            <main class="h-min w-min bg-white rounded-xl flex flex-col gap-[10px] p-[10px] border border-gray-400">
+                <!----------------------  header  ------------------------------->
+                <header class="h-[30px] w-[130px] flex items-center gap-[5px]">
+                    <input type="checkbox" name="checkbox" id="checkbox" checked class="cursor-pointer">
+                    <label for="checkbox" class="text-[14px] font-medium cursor-pointer">One Way</label>
+                </header>
+                <!-------------------------   main   ---------------------------->
+                <main class="h-[65px] w-min flex cursor-pointer">
+                    <div class=" h-[50px] w-[450px] flex items-center justify-between">
+                        <div class="border-b border-b-gray-400">
+                            <p class="text-other7 text-[14px]">From</p>
+                            <h1 class="font-bold">Delhi (DEL)</h1>
+                        </div>
+                        <img src="exchange.png" alt="exchange" class="h-[30px] w-[30px]">
+                        <div class="flex flex-col items-end border-b border-b-gray-400">
+                            <p class="text-other7 text-[15px]">To</p>
+                            <h1 class="font-bold">Mumbai (BOM)</h1>
+                        </div>
+                    </div>
+                </main>
+                <!---------------------------  main 1 ------------------------------->
+                <div class="h-[50px] w-full flex items-center justify-between cursor-pointer">
+                    <div class=" h-[50px] w-[180px] flex flex-col border-b border-b-gray-400">
+                        <p class="text-other7 text-[14px]">Depart</p>
+                        <h1 class="font-bold">Tue, 20 May 25</h1>
+                    </div>
+                    <div class=" h-[50px] w-[170px] flex flex-col items-end border-b border-b-gray-400">
+                        <p class="text-other7 text-[14px]">Return</p>
+                        <h1 class="font-bold text-other4">Add Return</h1>
+                    </div>
+                </div>
+                <!---------------------------  main 2 ------------------------------->
+                <div class="h-[50px] w-full flex justify-between cursor-pointer">
+                    <div class=" h-[50px] w-[220px] flex flex-col border-b border-b-gray-400">
+                        <p class="text-other7 text-[14px]">Passenger & Class</p>
+                        <h1 class="font-bold">1 Traveller, Economy</h1>
+                    </div>
+                    <button
+                        class=" h-[50px] w-[150px] flex items-center justify-center bg-other4 text-white font-bold rounded-[8px]">Search
+                        Flights
+                    </button>
+                </div>
+                <!---------------------------  main 3  -------------------------------->
+                <div class="h-[20px] w-full flex justify-between">
+                    <h1 class="text-other7 text-[15px] font-medium">Special Fares (optional)</h1>
+                    <div class="flex gap-[5px]">
+                        <img src="rupees.png" alt="rupees" class="h-[18px] w-[18px] rounded-full">
+                        <p class="text-other8 text-[12px] font-bold">Extra Savings</p>
+                    </div>
+                </div>
+                <!--------------------------  main 4  ------------------------------->
+                <div class="flex h-[50px] w-full items-center gap-[10px]">
+                    <div
+                        class="h-full w-[120px] flex flex-col justify-center pl-[15px] border border-gray-300 rounded-[8px] hover:bg-other3 cursor-pointer">
+                        <h1 class="text-[13px] font-bold">Armed Forces</h1>
+                        <p class="text-other1 font-medium text-[12px]">Up to ₹600 off</p>
+                    </div>
+                    <div
+                        class="h-full w-[120px] flex flex-col justify-center pl-[15px] border border-gray-300 rounded-[8px] hover:bg-other3 cursor-pointer">
+                        <h1 class="text-[13px] font-bold">Student</h1>
+                        <p class="text-other1 font-medium text-[12px]">Extra Baggage</p>
+                    </div>
+                    <div
+                        class="h-full w-[120px] flex flex-col justify-center pl-[15px] border border-gray-300 rounded-[8px] hover:bg-other3 cursor-pointer">
+                        <h1 class="text-[13px] font-bold">Senior Citizen</h1>
+                        <p class="text-other1 font-medium text-[12px]">Up to ₹600 off</p>
+                    </div>
+                </div>
+            </main>
+            <!--------------------------   footer  ---------------------------------------->
+            <footer class="h-full w-full flex items-center justify-center">
+                <img src="ads2.png" alt="ads2" class="h-[120px] w-[380px] rounded-[12px] cursor-pointer">
+            </footer>
+        </div>
+
+        <!-----------------------  hero box max sm (under in 640px)  ---------------------->
+        <div
+            class="h-full w-[300px] sm:hidden  md:hidden lg:hidden xl:hidden flex flex-col items-center gap-[8px] py-[15px]">
+            <!-----------------------   header  --------------------------->
+            <header class="h-[220px] w-full gap-[35px] flex items-center justify-center">
+                <a href="#"
+                    class="h-full w-[85px] flex flex-col items-center justify-center gap-[3px] border-b-2 border-b-other4">
+                    <img src="flight.png" alt="flight" class="h-[15px] w-[25px]">
+                    <p class="font-medium text-[14px]">Flights</p>
+                </a>
+                <a href="#"
+                    class="h-full w-[60px] flex flex-col items-center justify-center gap-[3px] hover:border-b-2 border-b-other4">
+                    <img src="bus.png" alt="bus" class="h-[22px] w-[20px]">
+                    <p class="font-medium text-[14px]">Bus</p>
+                </a>
+                <a href="#"
+                    class="h-full w-[75px] flex flex-col items-center justify-center gap-[3px] hover:border-b-2 border-b-other4">
+                    <img src="train.png" alt="train" class="h-[23px] w-[20px]">
+                    <p class="font-medium text-[14px]">Trains</p>
+                </a>
+            </header>
+            <!-------------------------   main   ---------------------------------------->
+            <main class="h-min w-full bg-white rounded-xl flex flex-col gap-[15px] p-[10px] border border-gray-400">
+                <!----------------------  header  ------------------------------->
+                <header class="h-[30px] w-[130px] flex items-center gap-[5px]">
+                    <input type="checkbox" name="checkbox" id="checkbox" checked class="cursor-pointer">
+                    <label for="checkbox" class="text-[14px] font-medium cursor-pointer">One Way</label>
+                </header>
+                <!-------------------------   main   ---------------------------->
+                <div class=" h-[65px] w-full flex items-center justify-between">
+                    <div class="border-b border-b-gray-400">
+                        <p class="text-other7 text-[14px]">From</p>
+                        <h1 class="font-bold text-[20px]">DEL</h1>
+                        <p class="text-[14px]">Delhi</p>
+                    </div>
+                    <img src="exchange.png" alt="exchange" class="h-[30px] w-[30px]">
+                    <div class="flex flex-col items-end border-b border-b-gray-400">
+                        <p class="text-other7 text-[15px]">To</p>
+                        <h1 class="font-bold text-[20px]">BOM</h1>
+                        <p class="text-[14px]">Mumbai</p>
+                    </div>
+                </div>
+                <!---------------------------  main 1 ------------------------------->
+                <div class="h-[50px] w-full flex items-center justify-between gap-[10px] cursor-pointer">
+                    <div class=" h-[50px] w-[140px] flex flex-col border-b border-b-gray-400">
+                        <p class="text-other7 text-[14px]">Depart</p>
+                        <h1 class="font-bold">Tue, 20 May 25</h1>
+                    </div>
+                    <div class=" h-[50px] w-[100px] flex flex-col items-end border-b border-b-gray-400">
+                        <p class="text-other7 text-[14px]">Return</p>
+                        <h1 class="font-bold text-other4">Add Return</h1>
+                    </div>
+                </div>
+                <!---------------------------  main 2 ------------------------------->
+                <div class="h-[50px] w-full flex justify-between cursor-pointer">
+                    <div class=" h-[50px] w-[180px] flex flex-col border-b border-b-gray-400">
+                        <p class="text-other7 text-[14px]">Passenger & Class</p>
+                        <h1 class="font-bold">1 Traveller, Economy</h1>
+                    </div>
+                </div>
+                <!---------------------------  main 3  -------------------------------->
+                <div class="h-[20px] w-full flex justify-between">
+                    <h1 class="text-other7 text-[15px] font-medium">Special Fares (optional)</h1>
+                    <div class="flex gap-[5px]">
+                        <img src="rupees.png" alt="rupees" class="h-[18px] w-[18px] rounded-full">
+                        <p class="text-other8 text-[12px] font-bold">Extra Savings</p>
+                    </div>
+                </div>
+                <!--------------------------  main 4  ------------------------------->
+                <div class="flex h-[50px] w-full items-center justify-between">
+                    <div
+                        class="h-full w-[120px] flex flex-col justify-center pl-[15px] border border-gray-300 rounded-[8px] hover:bg-other3 cursor-pointer">
+                        <h1 class="text-[13px] font-bold">Student</h1>
+                        <p class="text-other1 font-medium text-[12px]">Extra Baggage</p>
+                    </div>
+                    <div
+                        class="h-full w-[120px] flex flex-col justify-center pl-[15px] border border-gray-300 rounded-[8px] hover:bg-other3 cursor-pointer">
+                        <h1 class="text-[13px] font-bold">Senior Citizen</h1>
+                        <p class="text-other1 font-medium text-[12px]">Up to ₹600 off</p>
+                    </div>
+                </div>
+                <!-------------------- button ---------------------------->
+                <button
+                    class=" h-[50px] w-full flex items-center justify-center bg-other4 text-white font-bold rounded-[8px]">Search
+                    Flights
+                </button>
+            </main>
+            <!--------------------------   footer  ---------------------------------------->
+            <footer class="h-full w-full flex items-center justify-center">
+                <img src="ads2.png" alt="ads2" class="h-[120px] w-[300px] rounded-[12px] cursor-pointer">
+            </footer>
+        </div>
+    </div>
+
+    <!-------------------------------  hero section 2  ---------------------------------------->
+    <div id="hero2" class="absolute top-[700px] sm:top-[650px] lg:top-[550px] xl:top-[500px] h-min xl:h-[320px] w-full bg-other9 flex items-center justify-center">
+        <div class="h-min w-full py-[20px] xl:py-0 px-[15px] xl:h-[280px] xl:w-[1250px] flex flex-col items-center gap-[20px] xl:flex-row xl:gap-[10px]">
+            <div class="w-full h-min xl:h-[280px] xl:w-[620px] bg-white rounded-[15px] px-[10px] py-[10px] flex flex-col gap-[20px]">
+                <h1 class="font-bold text-[20px]">Recharges</h1>
+                <div class="h-[120px] w-full flex items-center justify-evenly">
+                    <a href="#" class="h-[120px] w-[20%] hover:bg-white  hover:shadow-gray-400 hover:rounded-[10px] hover:shadow-md flex flex-col items-center justify-center gap-[10px]">
+                        <img src="img1.png" alt="img" class="h-[35px] w-[25px]">
+                        <div class="w-full text-center">
+                            <p class="text-[12px] font-medium md:text-[15px]">Mobile</p>
+                            <p class="text-[12px] font-medium md:text-[15px]">Recharge</p>
+                        </div>
+                    </a>
+                    <a href="#" class="h-[120px] w-[20%]  hover:bg-white  hover:shadow-gray-400 hover:rounded-[10px] hover:shadow-md flex flex-col items-center justify-center gap-[10px]">
+                        <img src="img2.png" alt="img" class="h-[35px] w-[45px]">
+                        <div class="w-full text-center">
+                            <p class="text-[12px] font-medium md:text-[15px]">FASTag</p>
+                            <p class="text-[12px] font-medium md:text-[15px]">Recharge</p>
+                        </div>
+                    </a>
+                    <a href="#" class="h-[120px] w-[20%]  hover:bg-white  hover:shadow-gray-400 hover:rounded-[10px] hover:shadow-md flex flex-col items-center justify-center gap-[10px]">
+                        <img src="img3.png" alt="img" class="h-[35px] w-[30px]">
+                        <div class="w-full text-center">
+                            <p class="text-[12px] font-medium md:text-[15px]">DTH</p>
+                            <p class="text-[12px] font-medium md:text-[15px]">Recharge</p>
+                        </div>
+                    </a>
+                    <a href="#" class="h-[120px] w-[20%] hover:bg-white  hover:shadow-gray-400 hover:rounded-[10px] hover:shadow-md flex flex-col items-center justify-center gap-[10px]">
+                        <img src="img4.png" alt="img" class="h-[40px] w-[40px]">
+                        <div class="w-full text-center">
+                            <p class="text-[12px] font-medium md:text-[15px]">View All</p>
+                            <p class="text-[12px] font-medium md:text-[15px]">Products</p>
+                        </div>
+                    </a>
+                </div>
+                <a href="#">
+                    <img src="big-img1.png" alt="img">
+                </a>
+            </div>
+            <div class="w-full h-min xl:h-[280px] xl:w-[620px] bg-white rounded-[15px] px-[10px] py-[10px] flex flex-col gap-[20px]">
+                <h1 class="font-bold text-[20px]">Bill Payments</h1>
+                <div class="h-[120px] w-full flex items-center justify-evenly">
+                    <a href="#" class="h-[120px] w-[20%] hover:bg-white  hover:shadow-gray-400 hover:rounded-[10px] hover:shadow-md flex flex-col items-center justify-center gap-[10px]">
+                        <img src="img5.png" alt="img" class="h-[35px] w-[25px]">
+                        <div class="w-full text-center">
+                            <p class="text-[12px] font-medium md:text-[15px]">Electricity</p>
+                            <p class="text-[12px] font-medium md:text-[15px]">Bill</p>
+                        </div>
+                    </a>
+                    <a href="#" class="h-[120px] w-[20%]  hover:bg-white  hover:shadow-gray-400 hover:rounded-[10px] hover:shadow-md flex flex-col items-center justify-center gap-[10px]">
+                        <img src="img6.png" alt="img" class="h-[45px] w-[45px]">
+                        <div class="w-full text-center">
+                            <p class="text-[12px] font-medium md:text-[15px]">LIC /</p>
+                            <p class="text-[12px] font-medium md:text-[15px]">Insurance</p>
+                        </div>
+                    </a>
+                    <a href="#" class="h-[120px] w-[20%]  hover:bg-white  hover:shadow-gray-400 hover:rounded-[10px] hover:shadow-md flex flex-col items-center justify-center gap-[10px]">
+                        <img src="img7.png" alt="img" class="h-[35px] w-[45px]">
+                        <div class="w-full text-center">
+                            <p class="text-[12px] font-medium md:text-[15px]">Loan</p>
+                            <p class="text-[12px] font-medium md:text-[15px]">EMI</p>
+                        </div>
+                    </a>
+                    <a href="#" class="h-[120px] w-[20%] hover:bg-white  hover:shadow-gray-400 hover:rounded-[10px] hover:shadow-md flex flex-col items-center justify-center gap-[10px]">
+                        <img src="img4.png" alt="img" class="h-[40px] w-[40px]">
+                        <div class="w-full text-center">
+                            <p class="text-[12px] font-medium md:text-[15px]">View All</p>
+                            <p class="text-[12px] font-medium md:text-[15px]">Products</p>
+                        </div>
+                    </a>
+                </div>
+                <a href="#">
+                    <img src="big-img2.png" alt="img">
+                </a>
+            </div>
+        </div>
     </div>
 
     <!--------------------------  script js --------------------------------->
