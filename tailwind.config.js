@@ -17,6 +17,7 @@ module.exports = {
         other7: "#0f0f0f8a",
         other8: "#27ae60",
         other9: "#f7f9fc",
+        other10: "#e9f1fc",
       },
     },
   },
