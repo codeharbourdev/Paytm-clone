@@ -9,10 +9,6 @@ A fully responsive **Paytm landing page clone** built using **HTML** and **Tailw
 - 💻 Clean and modern UI
 - 📱 Mobile-first design approach
 
-## 📸 Preview
-
-![Paytm Clone Preview](./screenshot.png) 
-
 ## 🛠️ Tech Stack
 
 - **HTML5**
