@@ -1,4 +1,4 @@
-# 💰 Paytm Clone (Tailwind CSS)
+# 💰 Payment Website Clone (Tailwind CSS)
 
 A fully responsive **Paytm landing page clone** built using **HTML** and **Tailwind CSS**. This project replicates the visual design and layout of the official [Paytm](https://paytm.com/) homepage, helping me practice responsive design and modern utility-first CSS.
 
@@ -17,6 +17,11 @@ A fully responsive **Paytm landing page clone** built using **HTML** and **Tailw
 
 
 ## 📦 How to Run
+
+
+
+
+⚠️ Disclaimer: This is a non-commercial clone created for educational purposes only. I am not affiliated with [Payment Website clone].
 
 1. Clone this repository:
    ```bash
